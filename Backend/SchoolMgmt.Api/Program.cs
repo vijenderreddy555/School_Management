@@ -101,11 +101,17 @@ app.UseAuthorization();
 app.MapGet("/", () => Results.Ok("SchoolMgmt API is running")); // health check target
 app.MapControllers();
 
-using (var scope = app.Services.CreateScope())
+try
 {
+    using var scope = app.Services.CreateScope();
     var db = scope.ServiceProvider.GetRequiredService<SchoolMgmtDbContext>();
     await db.Database.MigrateAsync();
     await DbSeeder.SeedAsync(db);
+}
+catch (Exception ex)
+{
+    // Don't let migration/seed failures crash the whole process; log and keep serving requests.
+    app.Logger.LogError(ex, "Database migration/seed failed at startup.");
 }
 
 app.Run();
