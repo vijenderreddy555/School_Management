@@ -65,7 +65,7 @@ builder.Services.AddAuthorization();
 var allowedOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>() ?? Array.Empty<string>();
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("FrontendPolicy", policy =>
+    options.AddPolicy("*", policy =>
     {
         policy.WithOrigins(allowedOrigins)
             .AllowAnyHeader()
@@ -85,7 +85,7 @@ app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseHttpsRedirection();
 
-app.UseCors("FrontendPolicy");
+app.UseCors("*");
 
 Directory.CreateDirectory(Path.Combine(app.Environment.ContentRootPath, "App_Data", "uploads"));
 app.UseStaticFiles(new Microsoft.AspNetCore.Builder.StaticFileOptions
