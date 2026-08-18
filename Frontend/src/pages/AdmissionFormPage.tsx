@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Card } from 'primereact/card';
 import { InputText } from 'primereact/inputtext';
 import { Calendar } from 'primereact/calendar';
 import { Dropdown } from 'primereact/dropdown';
@@ -83,12 +82,20 @@ export default function AdmissionFormPage() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-4">
+    <div className="max-w-4xl mx-auto p-4 md:p-6">
       <Toast ref={toast} />
-      <Card title="New Student Admission">
-        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6">
+      <div className="mb-6">
+        <h1 className="text-2xl font-bold text-gray-900">New Student Admission</h1>
+        <p className="text-sm text-gray-500 mt-1">
+          Capture demographic, guardian, and academic placement details to enroll a new student.
+        </p>
+      </div>
+      <div className="app-card p-5 md:p-8">
+        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-8">
           <section>
-            <h3 className="font-semibold text-lg mb-3">Personal Details</h3>
+            <h3 className="flex items-center gap-2 font-semibold text-base text-gray-800 mb-4">
+              <i className="pi pi-user text-indigo-600" /> Personal Details
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex flex-col gap-1">
                 <label htmlFor="firstName">First Name *</label>
@@ -174,7 +181,9 @@ export default function AdmissionFormPage() {
           <Divider />
 
           <section>
-            <h3 className="font-semibold text-lg mb-3">Academic Placement</h3>
+            <h3 className="flex items-center gap-2 font-semibold text-base text-gray-800 mb-4">
+              <i className="pi pi-graduation-cap text-indigo-600" /> Academic Placement
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="flex flex-col gap-1">
                 <label htmlFor="academicYearId">Academic Year *</label>
@@ -254,7 +263,9 @@ export default function AdmissionFormPage() {
           <Divider />
 
           <section>
-            <h3 className="font-semibold text-lg mb-3">Guardian & Emergency Contact</h3>
+            <h3 className="flex items-center gap-2 font-semibold text-base text-gray-800 mb-4">
+              <i className="pi pi-shield text-indigo-600" /> Guardian &amp; Emergency Contact
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex flex-col gap-1">
                 <label htmlFor="guardianName">Primary Guardian Name *</label>
@@ -321,17 +332,19 @@ export default function AdmissionFormPage() {
           <Divider />
 
           <section>
-            <h3 className="font-semibold text-lg mb-3">Medical Alerts</h3>
+            <h3 className="flex items-center gap-2 font-semibold text-base text-gray-800 mb-4">
+              <i className="pi pi-heart text-indigo-600" /> Medical Alerts
+            </h3>
             <Controller
               name="medicalAlerts"
               control={control}
               render={({ field }) => (
-                <InputTextarea id="medicalAlerts" rows={3} {...field} placeholder="e.g., Penicillin allergy" />
+                <InputTextarea id="medicalAlerts" rows={3} className="w-full" {...field} placeholder="e.g., Penicillin allergy" />
               )}
             />
           </section>
 
-          <div className="flex justify-end gap-3">
+          <div className="flex justify-end gap-3 pt-2 border-t border-gray-100 mt-2">
             <Button
               type="button"
               label="Cancel"
@@ -339,10 +352,10 @@ export default function AdmissionFormPage() {
               outlined
               onClick={() => navigate('/students')}
             />
-            <Button type="submit" label="Submit Admission" loading={createStudent.isPending} raised />
+            <Button type="submit" label="Submit Admission" icon="pi pi-check" loading={createStudent.isPending} raised />
           </div>
         </form>
-      </Card>
+      </div>
     </div>
   );
 }

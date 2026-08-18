@@ -1,4 +1,75 @@
 @import "tailwindcss";
-@import 'primereact/resources/themes/lara-light-blue/theme.css';
+@import 'primereact/resources/themes/lara-light-indigo/theme.css';
 @import 'primereact/resources/primereact.min.css';
 @import 'primeicons/primeicons.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --brand-900: #1e1b4b;
+  --brand-800: #312e81;
+  --brand-700: #3730a3;
+  --brand-600: #4338ca;
+  --brand-500: #4f46e5;
+  --surface-bg: #f4f5fa;
+}
+
+* {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--surface-bg);
+  color: #1f2937;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.app-card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 1px 3px rgba(15, 23, 42, 0.06);
+  border: 1px solid #e5e7eb;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  background: #f8fafc;
+  color: #475569;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.p-datatable .p-datatable-tbody > tr:hover {
+  background: #eef2ff;
+}
+
+form .p-inputtext,
+form .p-dropdown,
+form .p-calendar,
+form .p-inputnumber,
+form .p-inputnumber-input,
+form .p-inputtextarea {
+  width: 100%;
+}
+
+form label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+
+
