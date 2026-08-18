@@ -1,0 +1,15 @@
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\bin\Debug\net9.0\SchoolMgmt.Application.deps.json
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\bin\Debug\net9.0\SchoolMgmt.Application.dll
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\bin\Debug\net9.0\SchoolMgmt.Application.pdb
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\bin\Debug\net9.0\SchoolMgmt.Domain.dll
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\bin\Debug\net9.0\SchoolMgmt.Domain.pdb
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Debug\net9.0\SchoolMgmt.Application.csproj.AssemblyReference.cache
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Debug\net9.0\SchoolMgmt.Application.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Debug\net9.0\SchoolMgmt.Application.AssemblyInfoInputs.cache
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Debug\net9.0\SchoolMgmt.Application.AssemblyInfo.cs
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Debug\net9.0\SchoolMgmt.Application.csproj.CoreCompileInputs.cache
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Debug\net9.0\SchoolMg.A4948DE1.Up2Date
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Debug\net9.0\SchoolMgmt.Application.dll
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Debug\net9.0\refint\SchoolMgmt.Application.dll
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Debug\net9.0\SchoolMgmt.Application.pdb
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Debug\net9.0\ref\SchoolMgmt.Application.dll

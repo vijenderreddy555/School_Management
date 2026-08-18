@@ -1,0 +1,141 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Backend Foundation and Database Schema Implementation",
+        "description": "Initialize the ASP.NET Core 8 project with Clean Architecture layers and configure PostgreSQL with EF Core 8.",
+        "details": "Create the following projects: SchoolMgmt.Api, SchoolMgmt.Application, SchoolMgmt.Domain, SchoolMgmt.Infrastructure. In SchoolMgmt.Infrastructure, configure the DbContext with PostgreSQL using Npgsql. Define tables for 'academic_years', 'grades', 'sections', and 'guardians' using Fluent API for constraints. Ensure 'academic_years' has a unique 'code' and 'sections' has an 'enrolled_count' default of 0. Execute initial migration.",
+        "testStrategy": "Verify database connection and table creation via pgAdmin or dotnet-ef tools. Ensure constraints like Unique and Not Null are enforced at the DB level.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 2,
+        "title": "Domain Entities and Relationship Mapping",
+        "description": "Define core domain entities including Students and StudentDocuments with Enums and UUID primary keys.",
+        "details": "In SchoolMgmt.Domain, define Enums (Gender, BloodGroup, StudentStatus, DocumentType, Relationship). Implement 'Student' entity with a UUID PK. Map relationships: Student to Guardian (M:1), Student to Section (M:1), Student to Documents (1:M). Use Fluent API to configure the composite unique index on (academic_year_id, grade_id, section_id, roll_number) in the Persistence layer to prevent duplicate rolls.",
+        "testStrategy": "Unit test the EF Core configuration to ensure that adding a student with a duplicate roll_number in the same section throws a DbUpdateException.",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 3,
+        "title": "Student Registration Logic and Code Generation Service",
+        "description": "Implement logic for auto-generating student codes and computing atomic roll numbers.",
+        "details": "In SchoolMgmt.Application, create an IStudentService. Implement code generation logic for the format 'STU-YYYY-XXXXXX' where YYYY is the year. Use a PostgreSQL serializable transaction or a locking mechanism to calculate the next available roll_number for a section. Ensure section capacity is checked before incrementing enrolled_count.",
+        "testStrategy": "Mock the repository and test the student code generation logic. Integration test the roll number assignment with concurrent requests to ensure no duplicates.",
+        "priority": "high",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 4,
+        "title": "Student Registration API with FluentValidation",
+        "description": "Develop the POST /students endpoint with robust DTO validation and AutoMapper projection.",
+        "details": "Define CreateStudentDto. Implement FluentValidation for incoming requests: validate first/last name length (max 50), DOB (3-20 years age check), and national ID regex. Create AutoMapper profiles to map DTOs to Domain Entities. Implement StudentsController.Post() to invoke StudentService and return 201 Created with the generated StudentId and StudentCode.",
+        "testStrategy": "Send POST requests with invalid DOB, invalid phone formats, and duplicate national IDs to verify 400 Bad Request responses. Verify successful creation returns the expected JSON structure.",
+        "priority": "medium",
+        "dependencies": [
+          3
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 5,
+        "title": "Frontend Core Architecture and UI Setup",
+        "description": "Initialize the React application with Vite, Tailwind CSS, PrimeReact, and TanStack Query.",
+        "details": "Set up the Vite project. Install PrimeReact, Radix UI, Tailwind CSS, and TanStack Query v5. Configure Axios with a base URL pointing to the .NET API. Set up the basic layout with React Router v6. Create a types folder to mirror backend DTOs/Enums. Set up a Global Error Boundary and PrimeReact Toast for notifications.",
+        "testStrategy": "Verify the dev server runs and PrimeReact components render with Tailwind styling. Check that TanStack Query DevTools is active.",
+        "priority": "high",
+        "dependencies": [
+          4
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 6,
+        "title": "Student Admission Form Development",
+        "description": "Build the multi-part admission form using React Hook Form, Zod, and cascading dropdowns.",
+        "details": "Implement the form with fields for personal details, guardian info, and academic selection. Use Zod for client-side validation (matching backend FluentValidation rules). Implement cascading logic: fetching Grades, then Sections filtered by Grade and capacity. Calculate age from DOB and Academic Year start date to show validation errors if outside the 3-20 range.",
+        "testStrategy": "Manually test form validation triggers. Verify that the Section dropdown updates correctly when the Grade is changed. Check mobile phone E.164 formatting.",
+        "priority": "medium",
+        "dependencies": [
+          5
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 7,
+        "title": "Student Directory with Server-Side DataTable",
+        "description": "Implement the GET /students directory view with server-side pagination, sorting, and debounced search.",
+        "details": "Backend: Implement GET /students with query parameters (searchQuery, pageNumber, pageSize, filters). Use IQueryable to build dynamic filters and indexed queries. Frontend: Implement PrimeReact DataTable with 'lazy' loading. Integrate TanStack Query for data fetching and debounced search on name/National ID.",
+        "testStrategy": "Test the search with 10k+ mock records to ensure sub-800ms response times. Verify that pagination and column sorting update the API call correctly.",
+        "priority": "medium",
+        "dependencies": [
+          5
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 8,
+        "title": "Document Upload and Storage Integration",
+        "description": "Implement multipart/form-data document upload for student verification files.",
+        "details": "Backend: Create POST /students/{id}/documents. Implement file validation (max 5MB, extensions .pdf, .png, .jpeg). Set up a service to store files (S3 or local storage) and record metadata in 'student_documents'. Frontend: Integrate PrimeReact FileUpload component with client-side size and type checks.",
+        "testStrategy": "Upload a 6MB file and verify it is rejected. Upload a .txt file and verify rejection. Verify successful uploads store the URL in the database and the file in storage.",
+        "priority": "low",
+        "dependencies": [
+          4,
+          6
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 9,
+        "title": "Status Management and History Tracking",
+        "description": "Implement the PUT /students/{id}/status endpoint and record state transitions.",
+        "details": "Backend: Create UpdateStudentStatusDto. Implement logic to update student status and optionally section. Inside a transaction, insert a record into 'student_status_history' with changeReason and changedByUserId (from JWT). Frontend: Create a Status Update Dialog requiring a non-empty reason. Update the Directory UI to trigger this dialog.",
+        "testStrategy": "Update a student status and verify the 'student_status_history' table contains the previous and new status correctly. Attempt to reassign to a full section and verify 422 error.",
+        "priority": "low",
+        "dependencies": [
+          7
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 10,
+        "title": "Authentication, RBAC, and Field-Level Security",
+        "description": "Secure the application using JWT and Role-Based Access Control (RBAC).",
+        "details": "Configure JWT Authentication middleware in ASP.NET Core. Apply [Authorize(Roles = \"REGISTRAR, ADMISSIONS_ADMIN, SYSTEM_ADMIN\")] to student creation and status updates. Implement field-level masking or encryption for 'national_id' and 'medical_alerts' in API responses if the user role is 'TEACHER'. Ensure TLS 1.3 is enforced.",
+        "testStrategy": "Attempt to access /students as an unauthenticated user (401). Access as 'TEACHER' and verify that sensitive fields are restricted or masked compared to 'SYSTEM_ADMIN'.",
+        "priority": "high",
+        "dependencies": [
+          4,
+          9
+        ],
+        "status": "pending",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2026-08-17T15:05:39.152Z",
+      "updated": "2026-08-17T15:05:39.152Z",
+      "description": "Tasks for master context"
+    }
+  }
+}

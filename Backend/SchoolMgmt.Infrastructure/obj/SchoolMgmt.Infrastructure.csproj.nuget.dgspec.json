@@ -1,0 +1,234 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Infrastructure\\SchoolMgmt.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Application\\SchoolMgmt.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Application\\SchoolMgmt.Application.csproj",
+        "projectName": "SchoolMgmt.Application",
+        "projectPath": "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Application\\SchoolMgmt.Application.csproj",
+        "packagesPath": "C:\\Users\\VijenderReddyKamapat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\VijenderReddyKamapat\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Domain\\SchoolMgmt.Domain.csproj": {
+                "projectPath": "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Domain\\SchoolMgmt.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.120/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Domain\\SchoolMgmt.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Domain\\SchoolMgmt.Domain.csproj",
+        "projectName": "SchoolMgmt.Domain",
+        "projectPath": "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Domain\\SchoolMgmt.Domain.csproj",
+        "packagesPath": "C:\\Users\\VijenderReddyKamapat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\VijenderReddyKamapat\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.120/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Infrastructure\\SchoolMgmt.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Infrastructure\\SchoolMgmt.Infrastructure.csproj",
+        "projectName": "SchoolMgmt.Infrastructure",
+        "projectPath": "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Infrastructure\\SchoolMgmt.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\VijenderReddyKamapat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\VijenderReddyKamapat\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Application\\SchoolMgmt.Application.csproj": {
+                "projectPath": "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Application\\SchoolMgmt.Application.csproj"
+              },
+              "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Domain\\SchoolMgmt.Domain.csproj": {
+                "projectPath": "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Domain\\SchoolMgmt.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.120/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\bin\Debug\net9.0\SchoolMgmt.Domain.deps.json
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\bin\Debug\net9.0\SchoolMgmt.Domain.dll
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\bin\Debug\net9.0\SchoolMgmt.Domain.pdb
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\obj\Debug\net9.0\SchoolMgmt.Domain.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\obj\Debug\net9.0\SchoolMgmt.Domain.AssemblyInfoInputs.cache
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\obj\Debug\net9.0\SchoolMgmt.Domain.AssemblyInfo.cs
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\obj\Debug\net9.0\SchoolMgmt.Domain.csproj.CoreCompileInputs.cache
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\obj\Debug\net9.0\SchoolMgmt.Domain.dll
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\obj\Debug\net9.0\refint\SchoolMgmt.Domain.dll
+c:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\obj\Debug\net9.0\SchoolMgmt.Domain.pdb
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\obj\Debug\net9.0\ref\SchoolMgmt.Domain.dll
