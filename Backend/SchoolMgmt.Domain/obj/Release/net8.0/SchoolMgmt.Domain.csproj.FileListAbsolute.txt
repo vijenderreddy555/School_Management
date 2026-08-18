@@ -1,0 +1,12 @@
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\bin\Release\net8.0\SchoolMgmt.Domain.deps.json
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\bin\Release\net8.0\SchoolMgmt.Domain.dll
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\bin\Release\net8.0\SchoolMgmt.Domain.pdb
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\obj\Release\net8.0\SchoolMgmt.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\obj\Release\net8.0\SchoolMgmt.Domain.AssemblyInfoInputs.cache
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\obj\Release\net8.0\SchoolMgmt.Domain.AssemblyInfo.cs
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\obj\Release\net8.0\SchoolMgmt.Domain.csproj.CoreCompileInputs.cache
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\obj\Release\net8.0\SchoolMgmt.Domain.sourcelink.json
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\obj\Release\net8.0\SchoolMgmt.Domain.dll
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\obj\Release\net8.0\refint\SchoolMgmt.Domain.dll
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\obj\Release\net8.0\SchoolMgmt.Domain.pdb
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Domain\obj\Release\net8.0\ref\SchoolMgmt.Domain.dll

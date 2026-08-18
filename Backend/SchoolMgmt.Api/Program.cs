@@ -98,6 +98,7 @@ app.UseStaticFiles(new Microsoft.AspNetCore.Builder.StaticFileOptions
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.MapGet("/", () => Results.Ok("SchoolMgmt API is running")); // health check target
 app.MapControllers();
 
 using (var scope = app.Services.CreateScope())

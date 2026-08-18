@@ -1,0 +1,16 @@
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\bin\Release\net8.0\SchoolMgmt.Application.deps.json
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\bin\Release\net8.0\SchoolMgmt.Application.dll
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\bin\Release\net8.0\SchoolMgmt.Application.pdb
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\bin\Release\net8.0\SchoolMgmt.Domain.dll
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\bin\Release\net8.0\SchoolMgmt.Domain.pdb
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Release\net8.0\SchoolMgmt.Application.csproj.AssemblyReference.cache
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Release\net8.0\SchoolMgmt.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Release\net8.0\SchoolMgmt.Application.AssemblyInfoInputs.cache
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Release\net8.0\SchoolMgmt.Application.AssemblyInfo.cs
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Release\net8.0\SchoolMgmt.Application.csproj.CoreCompileInputs.cache
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Release\net8.0\SchoolMgmt.Application.sourcelink.json
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Release\net8.0\SchoolMg.A4948DE1.Up2Date
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Release\net8.0\SchoolMgmt.Application.dll
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Release\net8.0\refint\SchoolMgmt.Application.dll
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Release\net8.0\SchoolMgmt.Application.pdb
+C:\Users\VijenderReddyKamapat\Downloads\School_Management\Backend\SchoolMgmt.Application\obj\Release\net8.0\ref\SchoolMgmt.Application.dll

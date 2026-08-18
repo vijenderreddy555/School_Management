@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SchoolMgmt.Domain/1.0.0": {
+        "runtime": {
+          "SchoolMgmt.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SchoolMgmt.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

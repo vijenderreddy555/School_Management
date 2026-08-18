@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "yeJiv5SnJqI=",
+  "dgSpecHash": "RVbcNd2Y9/U=",
   "success": true,
   "projectFilePath": "C:\\Users\\VijenderReddyKamapat\\Downloads\\School_Management\\Backend\\SchoolMgmt.Domain\\SchoolMgmt.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\VijenderReddyKamapat\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.30\\microsoft.netcore.app.ref.8.0.30.nupkg.sha512",
+    "C:\\Users\\VijenderReddyKamapat\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.30\\microsoft.windowsdesktop.app.ref.8.0.30.nupkg.sha512",
+    "C:\\Users\\VijenderReddyKamapat\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.30\\microsoft.aspnetcore.app.ref.8.0.30.nupkg.sha512"
+  ],
   "logs": []
 }
